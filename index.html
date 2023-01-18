@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="style.css" />
+
     <script
       src="https://kit.fontawesome.com/4ad2b19603.js"
       crossorigin="anonymous"
@@ -14,8 +16,30 @@
   </head>
 
   <body>
+    <div class="img-background"></div>
+
+    <span class="img-author"
+      >Photo by
+      <a
+        href="https://unsplash.com/ko/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Shubham Dhage</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/bdt8C6DL6T4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Unsplash</a
+      >
+    </span>
+
     <header>
       <nav>
+        <a href="https://github.com/DerianMelvin" target="_blank">
+          <img
+            class="profile-pic"
+            src="./Images/profile_pic.png"
+            alt="Profile pic"
+          />
+        </a>
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -25,34 +49,32 @@
     </header>
 
     <main>
-      <div>
-        <img src="" alt="" />
-      </div>
-
-      <div>
-        <div>
+      <div class="main-content">
+        <div class="intro">
           <h1>Hello There!</h1>
-          <h2>I'm Derian Melvin</h2>
+          <h2><span>I'm</span> Derian Melvin</h2>
           <p>
             An aspiring <b>Web Developer</b> looking to explore & experience the
             world of software engineering
           </p>
         </div>
 
-        <div>
-          <i class="fa-brands fa-html5 fa-5x"></i>
-          <i class="fa-brands fa-css3-alt fa-5x"></i>
-          <i class="fa-brands fa-square-js fa-5x"></i>
-          <i class="fa-brands fa-react fa-5x"></i>
-          <i class="fa-brands fa-sass fa-5x"></i>
+        <div class="icons">
+          <i class="fa-brands fa-html5 fa-4x"></i>
+          <i class="fa-brands fa-css3-alt fa-4x"></i>
+          <i class="fa-brands fa-square-js fa-4x"></i>
+          <i class="fa-brands fa-react fa-4x"></i>
+          <i class="fa-brands fa-sass fa-4x"></i>
         </div>
 
-        <button>Click Me!</button>
+        <button onclick="showAlert()">Click Me!</button>
       </div>
     </main>
 
     <footer>
-      <span>&copy; 2023 Derian Melvin. All rights reserved.</span>
+      <p>&copy; 2023 Derian Melvin. All rights reserved.</p>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
