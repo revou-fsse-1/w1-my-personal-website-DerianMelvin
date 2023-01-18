@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap");
+
+:root {
+  --font-size-big: 4.7rem;
+  --font-size-medium: 2.7rem;
+  --font-size-normal: 1.6rem;
+
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+
+  --margin-right: 6vw;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+button {
+  font-family: "Jost", "Segoe UI", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+li,
+h1,
+h2,
+p,
+a,
+.fa-brands {
+  color: white;
+}
+
+.img-background {
+  background-image: url(./Images/image_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  left: -24.84%;
+  right: 24.84%;
+  top: 0%;
+  bottom: 0%;
+  z-index: -2;
+}
+
+.img-author {
+  position: absolute;
+  left: 0.7rem;
+  bottom: 0.7rem;
+
+  color: grey;
+}
+
+nav {
+  margin-top: 2.5rem;
+  margin-right: var(--margin-right);
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+nav img {
+  width: 3.4rem;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+}
+
+ul > li {
+  margin: 0 1.7rem;
+  padding: 0.7rem;
+  list-style: none;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-light);
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+
+  position: absolute;
+  left: 13.98%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: -1;
+
+  background: linear-gradient(270deg, #000b1b 48.38%, rgba(0, 11, 27, 0) 100%);
+}
+
+.main-content {
+  margin-right: var(--margin-right);
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  text-align: right;
+}
+
+.intro,
+.icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.intro {
+  flex-direction: column;
+}
+
+.intro > * {
+  margin: 1.3rem 0;
+}
+
+.intro h1 {
+  font-size: var(--font-size-big);
+}
+
+.intro h2 {
+  font-size: var(--font-size-medium);
+}
+
+.intro h2 span {
+  font-weight: var(--font-weight-light);
+}
+
+.intro p {
+  width: 70%;
+
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-light);
+}
+
+.icons > * {
+  margin: 1.5rem 1.6rem;
+}
+
+.icons > i {
+  transition: all 0.18s ease-out;
+}
+
+.icons > i:hover {
+  transform: matrix(1.5, 0.3, -0.3, 1.5, 0, 0);
+}
+
+.icons .fa-sass {
+  margin-right: 0;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 1.1rem 2.5rem;
+  width: fit-content;
+
+  border: 2px solid black;
+  border-radius: 0.7rem;
+
+  font-size: var(--font-size-normal);
+
+  transition: all 0.12s ease-out;
+}
+
+button:hover {
+  background-color: #000b1b;
+  color: white;
+
+  border: 2px solid white;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+}
+
+footer p {
+  color: grey;
+}
